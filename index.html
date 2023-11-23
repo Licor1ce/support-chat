@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <!-- Bloquea el zoom en smartphones-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <!-- Tus archivos CSS -->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <title>Chat de soporte</title>
+        <style>
+        </style>
+    </head>
+    <!--Contenido de la web-->
+    <body>
+        <h1>Chat de soporte</h1>
+        <section class="chat">
+            <header class="chat__header">
+                <button class="button chat__close" aria-label="Cerrar">✖️</button>
+                <h2 class="chat__name">Don Quijote</h2>
+            <p class="chat__status">
+                <span class="chat__led"></span>
+                Te responderemos tan pronto como sea posible
+            </p>
+            </header>
+            <div class="chat__messages" aria-live="polite">
+                <article class="message message--emisor">
+                    <h3 class="message__username">Caballero blanca luna</h3>
+                    <p class="message__text">Hola, estoy experimentando un problema al intentar abrir la aplicación. ¿Pueden ayudarme?
+                    </p>
+                </article>
+                <article class="message message--receptor">
+                    <h3 class="message__username">Don Quijote</h3>
+                    <p class="message__text">¡Hola! Lamento escuchar que estás teniendo problemas con nuestra aplicación.
+                        Estoy aquí para ayudarte. ¿Podrías proporcionarme más detalles sobre el problema que estás experimentando?</p>
+                </article>
+                <article class="message message--emisor">
+                    <h3 class="message__username">Caballero blanca luna</h3>
+                    <p class="message__text">Cuando intento abrir la aplicación, simplemente no carga.
+                        Se queda en la pantalla de inicio y luego se cierra.</p>
+                </article>
+                <article class="message message--receptor">
+                    <h3 class="message__username">Don Quijote</h3>
+                    <p class="message__text">Entiendo, eso suena frustrante. Para poder ayudarte mejor, ¿podrías indicarme qué dispositivo y sistema operativo estás utilizando?
+                        Además, ¿has notado algún mensaje de error o algún otro comportamiento inusual antes de que la aplicación se cierre?</p>
+                </article>
+                <article class="message message--emisor">
+                    <h3 class="message__username">Caballero blanca luna</h3>
+                    <p class="message__text">¡Funcionó! La aplicación ahora se abre correctamente. </p>
+                </article>
+            </div>
+            <footer class="chat__footer">
+                <form class="chat__form">
+                    <input
+                            class="chat__input"
+                            name="message"
+                            type="text"
+                            value=""
+                            placeholder="Escribe tu mensaje..."
+                            aria-label="Nuevo mensaje"
+                    >
+                    <button class="button chat__button" aria-label="Abrir emojis">😁</button>
+                    <button class="button chat__attachment" aria-label="Adjuntar archivo">📎</button>
+                </form>
+            </footer>
+        </section>
+    </body>
+</html>
